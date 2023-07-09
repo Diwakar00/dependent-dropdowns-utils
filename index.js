@@ -1,1 +1,1 @@
-export { getOptions } from "./getOptions";
+module.exports = { getOptions: require("./getOptions") };

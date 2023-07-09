@@ -22,4 +22,4 @@ const getOptions = (optionsData, selectedOptions, dropdown) => {
   return [...new Set(dropdownOptions)];
 };
 
-export default getOptions;
+module.exports = getOptions;

@@ -1,1 +1,1 @@
-export { default as getOptions } from "./getOptions";
+module.exports = require("./getOptions");
