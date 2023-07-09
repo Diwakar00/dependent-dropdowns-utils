@@ -1,0 +1,35 @@
+{
+  "name": "dependent-dropdowns-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diwakar00/dependent-dropdowns-utils.git"
+  },
+  "keywords": [
+    "dependent dropdowns",
+    "dependent-dropdowns",
+    "dependent dropdowns utils",
+    "dependent-dropdowns-utils",
+    "multiselect dropdowns utils",
+    "multiselect-dropdowns-utils",
+    "multiselect dependency utils",
+    "multiselect-dependency-utils",
+    "multiselect dropdown",
+    "multiselect-dropdown",
+    "multiselect dropdowns",
+    "multiselect-dropdowns",
+    "filter options",
+    "filter-options"
+  ],
+  "author": "Diwakar MK <diwakarmk7@gmail.com> (https://www.linkedin.com/in/diwakar-m-k-512719163/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diwakar00/dependent-dropdowns-utils/issues"
+  },
+  "homepage": "https://github.com/Diwakar00/dependent-dropdowns-utils#readme"
+}
