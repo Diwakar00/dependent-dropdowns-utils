@@ -2,8 +2,9 @@ const {
   getValuesMatchingCondition,
   getUniqueValues,
 } = require("../utils/generalFunctions");
+const getOptions = require("../getOptions");
 
-const getOptions = (optionsData, selectedOptions, dropdown) => {
+const getAllPossibleOptions = (optionsData, selectedOptions) => {
   const dropdownOptions = {};
   const selectedOptionsCopy = { ...selectedOptions };
 
@@ -11,15 +12,21 @@ const getOptions = (optionsData, selectedOptions, dropdown) => {
     if (
       selectedOptionsCopy[key] === null ||
       selectedOptionsCopy[key].length === 0
-    )
+    ) {
+      dropdownOptions[key] = [];
       delete selectedOptionsCopy[key];
+    }
   }
-  dropdownOptions[dropdown] = [];
-  delete selectedOptionsCopy[dropdown];
 
   getValuesMatchingCondition(optionsData, selectedOptionsCopy, dropdownOptions);
 
-  return getUniqueValues(dropdownOptions[dropdown]);
+  for (const key in dropdownOptions)
+    dropdownOptions[key] = getUniqueValues(dropdownOptions[key]);
+
+  for (const key in selectedOptionsCopy)
+    dropdownOptions[key] = getOptions(optionsData, selectedOptionsCopy, key);
+
+  return dropdownOptions;
 };
 
-module.exports = getOptions;
+module.exports = getAllPossibleOptions;
