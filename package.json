@@ -1,6 +1,6 @@
 {
   "name": "dependent-dropdowns-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,8 @@
     "url": "git+https://github.com/Diwakar00/dependent-dropdowns-utils.git"
   },
   "keywords": [
+    "dropdown-utils",
+    "dropdown utils",
     "dependent dropdowns",
     "dependent-dropdowns",
     "dependent dropdowns utils",

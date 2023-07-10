@@ -1,1 +1,4 @@
-module.exports = { getOptions: require("./getOptions") };
+module.exports = {
+  getOptions: require("./getOptions"),
+  getAllPossibleOptions: require("./getAllPossibleOptions/getAllPossibleOptions"),
+};
