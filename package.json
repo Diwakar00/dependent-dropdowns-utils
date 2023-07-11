@@ -34,5 +34,8 @@
     "url": "https://github.com/Diwakar00/dependent-dropdowns-utils/issues"
   },
   "homepage": "https://github.com/Diwakar00/dependent-dropdowns-utils#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.4.1"
+  }
 }
