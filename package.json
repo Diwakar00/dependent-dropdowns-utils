@@ -15,6 +15,8 @@
     "dropdown utils",
     "dependent dropdowns",
     "dependent-dropdowns",
+    "dependent dropdown utils",
+    "dependent-dropdown-utils",
     "dependent dropdowns utils",
     "dependent-dropdowns-utils",
     "multiselect dropdowns utils",
@@ -29,7 +31,7 @@
     "filter-options"
   ],
   "author": "Diwakar MK <diwakarmk7@gmail.com> (https://www.linkedin.com/in/diwakar-m-k-512719163/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Diwakar00/dependent-dropdowns-utils/issues"
   },
