@@ -11,19 +11,24 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getOptions = void 0;
+exports.getOptionsBeforeClick = void 0;
+var getOptionsAfterClick_1 = require("../getOptionsAfterClick");
 var generalFunctions_1 = require("../utils/generalFunctions");
-var getOptions = function (optionsData, selectedOptions, dropdown) {
+var getOptionsBeforeClick = function (optionsData, selectedOptions) {
     var dropdownOptions = {};
     var selectedOptionsCopy = __assign({}, selectedOptions);
     for (var key in selectedOptionsCopy) {
         if (selectedOptionsCopy[key] === null ||
-            selectedOptionsCopy[key].length === 0)
+            selectedOptionsCopy[key].length === 0) {
+            dropdownOptions[key] = [];
             delete selectedOptionsCopy[key];
+        }
     }
-    dropdownOptions[dropdown] = [];
-    delete selectedOptionsCopy[dropdown];
     (0, generalFunctions_1.getValuesMatchingCondition)(optionsData, selectedOptionsCopy, dropdownOptions);
-    return (0, generalFunctions_1.getUniqueValues)(dropdownOptions[dropdown]);
+    for (var key in dropdownOptions)
+        dropdownOptions[key] = (0, generalFunctions_1.getUniqueValues)(dropdownOptions[key]);
+    for (var key in selectedOptionsCopy)
+        dropdownOptions[key] = (0, getOptionsAfterClick_1.getOptionsAfterClick)(optionsData, selectedOptionsCopy, key);
+    return dropdownOptions;
 };
-exports.getOptions = getOptions;
+exports.getOptionsBeforeClick = getOptionsBeforeClick;

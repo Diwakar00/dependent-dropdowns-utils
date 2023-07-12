@@ -3,10 +3,10 @@ import {
   getUniqueValues,
 } from "../utils/generalFunctions";
 
-export const getOptions = (
+export const getOptionsAfterClick = (
   optionsData: Array<Object>,
   selectedOptions: Object,
-  dropdown: string
+  currentDropdown: string
 ): Array<string> => {
   const dropdownOptions: Object | any = {};
   const selectedOptionsCopy: Object | any = { ...selectedOptions };
@@ -18,10 +18,10 @@ export const getOptions = (
     )
       delete selectedOptionsCopy[key];
   }
-  dropdownOptions[dropdown] = [];
-  delete selectedOptionsCopy[dropdown];
+  dropdownOptions[currentDropdown] = [];
+  delete selectedOptionsCopy[currentDropdown];
 
   getValuesMatchingCondition(optionsData, selectedOptionsCopy, dropdownOptions);
 
-  return getUniqueValues(dropdownOptions[dropdown]);
+  return getUniqueValues(dropdownOptions[currentDropdown]);
 };

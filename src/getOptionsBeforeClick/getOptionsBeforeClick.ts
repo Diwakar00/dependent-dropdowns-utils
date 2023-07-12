@@ -1,10 +1,10 @@
-import { getOptions } from "../getOptions";
+import { getOptionsAfterClick } from "../getOptionsAfterClick";
 import {
   getValuesMatchingCondition,
   getUniqueValues,
 } from "../utils/generalFunctions";
 
-export const getAllPossibleOptions = (
+export const getOptionsBeforeClick = (
   optionsData: Array<Object>,
   selectedOptions: Object
 ): Object => {
@@ -27,7 +27,11 @@ export const getAllPossibleOptions = (
     dropdownOptions[key] = getUniqueValues(dropdownOptions[key]);
 
   for (const key in selectedOptionsCopy)
-    dropdownOptions[key] = getOptions(optionsData, selectedOptionsCopy, key);
+    dropdownOptions[key] = getOptionsAfterClick(
+      optionsData,
+      selectedOptionsCopy,
+      key
+    );
 
   return dropdownOptions;
 };

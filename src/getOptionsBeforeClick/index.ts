@@ -1,0 +1,1 @@
+export { getOptionsBeforeClick } from "./getOptionsBeforeClick";
