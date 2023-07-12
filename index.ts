@@ -1,2 +1,2 @@
-export { getAllPossibleOptions } from "./src/getAllPossibleOptions";
-export { getOptions } from "./src/getOptions";
+export { getOptionsBeforeClick } from "./src/getOptionsBeforeClick";
+export { getOptionsAfterClick } from "./src/getOptionsAfterClick";

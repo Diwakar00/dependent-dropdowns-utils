@@ -1,1 +1,0 @@
-export { getOptions } from "./getOptions";

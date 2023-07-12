@@ -1,0 +1,1 @@
+export { getOptionsAfterClick } from "./getOptionsAfterClick";
