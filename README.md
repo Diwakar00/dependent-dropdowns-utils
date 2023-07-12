@@ -53,7 +53,7 @@ This is the recommended function to use if your dropdown supports getting an opt
 <h4>Note:</h4>
 getOptionsAfterClick function should be called on click of dropdown with dependency as options data array, selected options Object and property name of the data of which dropdown is displaying.
 
-### [Click here to see the Example](https://codesandbox.io/s/youthful-mountain-vh46nh?file=/demo.tsx)
+### [Click here to see the Example for getOptionsAfterClick](https://codesandbox.io/s/youthful-mountain-vh46nh?file=/demo.tsx)
 
 ## getOptionsBeforeClick
 
@@ -62,4 +62,4 @@ getOptionsBeforeClick will give the list of options for all the dropdowns and di
 <h4>Note:</h4>
 getOptionsBeforeClick function should be called inside a useEffect with dependency as options data array and selected options Object.
 
-### [Click here to see the Example](https://codesandbox.io/s/sleepy-austin-5gn4lf?file=/demo.tsx)
+### [Click here to see the Example for getOptionsBeforeClick](https://codesandbox.io/s/sleepy-austin-5gn4lf?file=/demo.tsx)
